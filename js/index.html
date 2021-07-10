@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+const text = "I wish I loved the Human Race";
+const vowels = ["a", "e", "i", "o", "u"]
+const result = []
+for (let textIndex = 0; textIndex < text.length; textIndex++){
+for (let vowelIndex = 0; vowelIndex < vowels.length; vowelIndex++){
+ if (text[textIndex] === vowels[vowelIndex]){
+  if (text[textIndex] === 'e'){
+   result.push('ee');
+  }
+   else {
+     result.push(text[textIndex]);
+     if (text[textIndex] === 'u'){
+   result.push('uu');
+  }
+   else {
+     result.push(text[textIndex]);
+    }
+   }
+  }
+ }
+}
+console.log(result.join('').toUpperCase());
+
+    </script>
+</body>
+</html>
